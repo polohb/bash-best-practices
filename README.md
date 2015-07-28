@@ -141,7 +141,6 @@ cmdline() {
 * Good intro to shunit2 : [shUnit2 - Bash Testing](http://www.mikewright.me/blog/2013/10/31/shunit2-bash-testing/)
 * Another good ressource : [Test Driving Shell Scripts](http://code.tutsplus.com/tutorials/test-driving-shell-scripts--net-31487)
 
-
 * The list of current assertions (as of version 2.1.6) :
   * `assertEquals [message] expected actual`
   * `assertSame [message] expected actual`
@@ -164,12 +163,6 @@ cmdline() {
   * `setUp` : run automatically before each test
   * `tearDown` run automatically after each test
   * `|| startSkipping` automatically skip after a test failure (default is to continue)
-
-
-
-
-
-
 
 ### Usefull links and  good references
 * Obsolete and deprecated bash syntax :
