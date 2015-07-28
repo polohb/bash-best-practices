@@ -138,6 +138,37 @@ cmdline() {
 ### Unit Testing
 * Very important in higher level languages
 * Use [shunit2](https://shunit2.googlecode.com/svn/trunk/source/2.1/doc/shunit2.html) for unit testing
+* Good intro to shunit2 : [shUnit2 - Bash Testing](http://www.mikewright.me/blog/2013/10/31/shunit2-bash-testing/)
+* Another good ressource : [Test Driving Shell Scripts](http://code.tutsplus.com/tutorials/test-driving-shell-scripts--net-31487)
+
+
+* The list of current assertions (as of version 2.1.6) :
+  * `assertEquals [message] expected actual`
+  * `assertSame [message] expected actual`
+  * `assertNotEquals [message] expected actual`
+  * `assertNotSame [message] expected actual`
+  * `assertNull [message] value` # used to compare a null in bash which is a zero length string
+  * `assertNotNull [message] value` # used to compare a null in bash which is a zero length string
+  * `assertTrue [message] condition`
+  * `assertFalse [message] condition`
+
+
+* The list of current failures (do not use them for value comparisons, use assertions for this) :
+  * `fail [message]`
+  * `failNotEquals [message] unexpected actual`
+  * `failSame [message] expected actual`
+  * `failNotSame [message] unexpected actual`
+
+
+* More specific functions :
+  * `setUp` : run automatically before each test
+  * `tearDown` run automatically after each test
+  * `|| startSkipping` automatically skip after a test failure (default is to continue)
+
+
+
+
+
 
 
 ### Usefull links and  good references
